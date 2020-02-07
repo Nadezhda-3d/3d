@@ -96,7 +96,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= $form->field($model, 'fileMtl')->fileInput() ?>
 
 
-        <?= $form->field($model, 'fileTexture[]')->fileInput(['multiple' => true]) ?>
+        <?= $form->field($model, 'fileTexture')->fileInput() ?>
 
         <?php
         if (!empty($model->contentUtfJs)) {
